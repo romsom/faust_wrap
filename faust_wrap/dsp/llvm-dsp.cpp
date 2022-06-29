@@ -1,5 +1,5 @@
 #include <faust/dsp/llvm-dsp.h>
-#include "dsp/llvm-dsp-wrap.h"
+#include "faust_wrap/dsp/llvm-dsp.h"
 
 namespace faust {
 
