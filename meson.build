@@ -1,0 +1,5 @@
+project('faust_wrap', 'cpp', default_options : ['warning_level=3', 'cpp_std=c++17'])
+add_project_arguments('-Wfatal-errors', '-I/usr/include', '-Wno-unused', language : 'cpp')
+compiler = meson.get_compiler('cpp')
+libfaust_wrap = library('faust_wrap', 'dsp/llvm-dsp.cpp', dependencies : [compiler.find_library('faust')])
+libfaust_wrap_dep = declare_dependency(include_directories : '.', link_with : libfaust_wrap)
