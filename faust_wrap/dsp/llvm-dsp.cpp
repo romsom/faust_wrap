@@ -5,7 +5,7 @@ namespace faust {
 
 
     // llvm_dsp
-    int faust::llvm_dsp::getNumInputs()
+    int llvm_dsp::getNumInputs()
     { return ((::llvm_dsp*)this)->getNumInputs(); }
        
     int llvm_dsp::getNumOutputs()
