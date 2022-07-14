@@ -34,6 +34,7 @@
 #define FAUSTFLOAT float
 #endif
 
+namespace faust {
 // forward declarations only when including this library
 // but not in library code after wrapped header has been
 // included
@@ -42,7 +43,6 @@ struct FAUST_API UI;
 struct FAUST_API Meta;
 #endif // __dsp__
 
-namespace faust {
 /**
  * DSP memory manager.
  */
