@@ -297,7 +297,8 @@ class FAUST_API ScopedNoDenormals {
 
 #define AVOIDDENORMALS ScopedNoDenormals();
 
-#endif
 
 }
+
 /************************** END dsp.h **************************/
+#endif
